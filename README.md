@@ -1,6 +1,7 @@
 # react-native-test
 
-test
+A Native Module in React Native that concatenates strings and performs symmetric key encryption and decryption using the tweetnacl library.
+The module was initialized with create-react-native-library@latest
 
 ## Installation
 
@@ -11,11 +12,11 @@ npm install react-native-test
 ## Usage
 
 ```js
-import { multiply } from 'react-native-test';
+import { concat } from 'react-native-test';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await concat('a', 'b');
 ```
 
 ## Contributing
