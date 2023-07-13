@@ -2,7 +2,7 @@
 #define TEST_H
 
 namespace test {
-  double multiply(double a, double b);
+  const char *concat(const char *a, const char *b);
 }
 
 #endif /* TEST_H */

@@ -26,12 +26,12 @@ public class TestModule extends ReactContextBaseJavaModule {
     System.loadLibrary("cpp");
   }
 
-  private static native double nativeMultiply(double a, double b);
+  private static native String nativeconcat(String a, String b);
 
   // Example method
   // See https://reactnative.dev/docs/native-modules-android
   @ReactMethod
-  public void multiply(double a, double b, Promise promise) {
-    promise.resolve(nativeMultiply(a, b));
+  public void concat(String a, String b, Promise promise) {
+    promise.resolve(nativeconcat(a, b));
   }
 }

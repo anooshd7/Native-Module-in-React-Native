@@ -17,6 +17,6 @@ const Test = NativeModules.Test
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return Test.multiply(a, b);
+export function concat(a: string, b: string): Promise<string> {
+  return Test.concat(a, b);
 }
